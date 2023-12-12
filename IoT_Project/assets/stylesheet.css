@@ -1,0 +1,200 @@
+:root {
+    --black: rgba(0, 2, 0, 1);
+    --dark-gray: rgba(39, 55, 77, 1);
+    --light-gray: rgba( 41, 241, 241, 1);
+    --bright-blue: rgba(93, 173, 226, 1);
+    --blue: rgba(168, 218, 225, 1);
+    --light-blue: rgba(214, 234, 248, 1);
+    --white: rgba(255, 255, 255,1);
+
+    --font-size-m: 20px;
+    --font-size-s: 16px;
+
+    --font-family-arvo: "Arvo";
+    --font-family-prata: "Prata";
+    --font-family-rokkitt: "Rokkitt";
+}
+
+#space{
+    padding: 5px;
+}
+
+body{
+    background-color: var(--light-blue);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+#fan-hum {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bluetooth-fan-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bluetooth_text {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.section-divs-mini{
+    background: var(--dark-gray);
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    height: 26vh;
+    width: 38vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-divs-small{
+    background: var(--dark-gray);
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    height: 26vh;
+    width: 80vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.section-divs-tall{
+    background: var(--dark-gray);
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    height: 57vh;
+    width: 29vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#information-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: var(--dark-gray);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    height: 58vh;
+    width: 50vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#pfp-image{
+    border-radius: 50%;
+    height: 18vh;
+    width: 18vh;
+    margin: 2.5vh;
+    margin-left: 3vh;
+    margin-top: 3vh;
+    float: left;
+}
+
+#information{
+    float: left;
+    margin: 5px;
+}
+
+.info-all{
+    margin: 5px;
+    margin-left: 6vh;
+    float: left;
+}
+
+.info-labels{
+    font-size: 22px;
+    float: left;
+}
+
+.info-inputs{
+    font-size: 20px;
+    font: var(--font-family-arvo);
+    width: 250px;
+    background-color: var(--dark-gray);
+    color: white;
+}
+
+#info-submit{
+    width: 175px;
+    height: 30px;
+    margin-top: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--dark-gray);
+    background-color: var(--light-blue);
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+#temp-fan-section{
+    text-align: center;
+}
+
+#temp-blue-section {
+    text-align: center;
+}
+
+#temp_termometer{
+    margin-top: 40px;
+}
+
+.fan-image-on {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fan-image-off {
+    animation-play-state: paused;
+}
+
+#temp_gauge_label {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+#light-intensity {
+    padding-left: 8px;
+    color: black;
+}
+
+#email_text {
+    color: white;
+}
+
+#rfid-text {
+    color: white;
+    font-size: 20px;
+}
+
